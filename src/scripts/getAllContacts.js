@@ -1,3 +1,8 @@
-export const getAllContacts = async () => {};
+import { readContacts } from '../utils/readContacts.js';
+export const getAllContacts = async () => {
+    const contacts = await readContacts();
 
-console.log(await getAllContacts());
+  console.log(' Всі контакти:', contacts);
+  };
+
+ getAllContacts();
